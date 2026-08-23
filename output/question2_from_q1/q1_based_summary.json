@@ -1,0 +1,47 @@
+{
+  "equation": {
+    "intercept": 7.5016416489745,
+    "week_linear": 0.27337555226935917,
+    "week_quadratic": 0.016950060121141395,
+    "bmi": -0.14170975162438018,
+    "week_mean": 16.819414607948445,
+    "bmi_mean": 32.2831478605745
+  },
+  "residual_sd": 1.2599676395388302,
+  "technical_sd": 0.44650508820433976,
+  "groups": [
+    {
+      "group": 1,
+      "n": 207,
+      "bmi_min": 20.703125,
+      "bmi_max": 34.157215650000005,
+      "raw_week": 11.0,
+      "decision_week": 11.0,
+      "decision_label": "11周+0天",
+      "boundary_probability": 0.9609078586982113,
+      "bmi_interval": "[20.70, 34.16)"
+    },
+    {
+      "group": 2,
+      "n": 30,
+      "bmi_min": 34.16401604452477,
+      "bmi_max": 35.747516228520496,
+      "raw_week": 11.866055869429445,
+      "decision_week": 12.0,
+      "decision_label": "12周+0天",
+      "boundary_probability": 0.9511700434509632,
+      "bmi_interval": "[34.16, 35.75)"
+    },
+    {
+      "group": 3,
+      "n": 30,
+      "bmi_min": 35.755006941666664,
+      "bmi_max": 46.875,
+      "raw_week": 18.889739823976953,
+      "decision_week": 19.0,
+      "decision_label": "19周+0天",
+      "boundary_probability": 0.9530409483594009,
+      "bmi_interval": "[35.75, 46.88]"
+    }
+  ]
+}
