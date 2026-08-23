@@ -1,0 +1,176 @@
+{
+  "audit": {
+    "raw_rows": 1082,
+    "raw_women": 267,
+    "raw_missing_y": 0,
+    "raw_invalid_gest_week": 0,
+    "episodes": 1064,
+    "episodes_with_technical_replicates": 18,
+    "max_technical_replicates": 2,
+    "valid_episodes": 1064,
+    "valid_women": 267,
+    "women_with_multiple_valid_episodes": 260,
+    "gest_week_mean": 16.819414607948445,
+    "gest_week_sd": 4.070313303830808,
+    "gest_week_min": 11.0,
+    "gest_week_max": 29.0,
+    "bmi_mean": 32.2831478605745,
+    "bmi_sd": 2.978268750498993,
+    "bmi_min": 20.703125,
+    "bmi_max": 46.875,
+    "y_pct_mean": 7.751766736748121,
+    "y_pct_sd": 3.343563918260377,
+    "y_pct_min": 1.0003887,
+    "y_pct_max": 23.4217554,
+    "y_pct_negative": 0
+  },
+  "main_model": {
+    "formula_scaled": "y_pct ~ g_within_s + I(g_within_s ** 2) + g_between_s + bmi_within_s + bmi_between_s",
+    "ml_aic": 4512.36414591218,
+    "ml_bic": 4562.062052611196,
+    "ml_loglik": -2246.18207295609,
+    "ml_converged": true,
+    "reml_converged": true,
+    "metrics": {
+      "marginal_r2": 0.20990194724261874,
+      "conditional_r2": 0.859582403710248,
+      "fixed_variance": 2.3730873003592414,
+      "average_random_variance": 7.345088794020905,
+      "residual_variance": 1.5875184526850517,
+      "shapiro_w": 0.930654109387452,
+      "shapiro_p": 8.639744572791987e-22,
+      "abs_standardized_residual_gt_3": 21,
+      "random_effect_covariance_scaled": [
+        [
+          6.529210397038529,
+          1.026604419212475
+        ],
+        [
+          1.026604419212475,
+          1.1131157376535559
+        ]
+      ],
+      "n": 1064,
+      "women": 267
+    },
+    "likelihood_ratio_tests": {
+      "总体固定效应": {
+        "lr_stat": 322.1250164864632,
+        "df": 5,
+        "pvalue": 1.7471703509063254e-67,
+        "reduced_loglik": -2407.2445811993216
+      },
+      "组内孕周一次与二次项": {
+        "lr_stat": 235.0898834827749,
+        "df": 2,
+        "pvalue": 8.930595645636121e-52,
+        "reduced_loglik": -2363.7270146974774
+      },
+      "组间平均检测孕周": {
+        "lr_stat": 29.113869193757637,
+        "df": 1,
+        "pvalue": 6.824667142893907e-08,
+        "reduced_loglik": -2260.739007552969
+      },
+      "BMI组内与组间项": {
+        "lr_stat": 16.142101773108152,
+        "df": 2,
+        "pvalue": 0.0003124547539738851,
+        "reduced_loglik": -2254.253123842644
+      }
+    }
+  },
+  "technical_replicates": {
+    "pairs": 18,
+    "mean_difference_pp": 0.26750433333333357,
+    "mean_absolute_difference_pp": 0.5460985111111111,
+    "repeat_measurement_sd_pp": 0.44650508820433976,
+    "max_absolute_difference_pp": 1.3988060000000004,
+    "loa_lower_pp": -0.9701446274247243,
+    "loa_upper_pp": 1.5051532940913914
+  },
+  "gee": {
+    "dependence": 0.7581136259052387,
+    "coefficients_scaled": {
+      "Intercept": 7.5016416489745,
+      "g_global_s": 1.0935022090774367,
+      "I(g_global_s ** 2)": 0.2712009619382623,
+      "bmi_global_s": -0.42512925487314057
+    },
+    "robust_se_scaled": {
+      "Intercept": 0.2037646416224169,
+      "g_global_s": 0.09066974443299076,
+      "I(g_global_s ** 2)": 0.06229815842095053,
+      "bmi_global_s": 0.17155229988367648
+    },
+    "pvalues": {
+      "Intercept": 1.0536477665324408e-296,
+      "g_global_s": 1.7120668070863427e-33,
+      "I(g_global_s ** 2)": 1.341192649095912e-05,
+      "bmi_global_s": 0.013207225054200614
+    }
+  },
+  "first_measurement": {
+    "n": 267,
+    "week_min": 11.0,
+    "week_max": 22.0,
+    "coefficients": {
+      "Intercept": 6.612481976229164,
+      "g_first_c": -0.05611278836073255,
+      "I(g_first_c ** 2)": 0.03431797813354413,
+      "bmi_first_c": -0.23801131579139378
+    },
+    "hc3_se": {
+      "Intercept": 0.18436674579178963,
+      "g_first_c": 0.21571779382331274,
+      "I(g_first_c ** 2)": 0.03534489831185324,
+      "bmi_first_c": 0.05836386756651161
+    },
+    "pvalues": {
+      "Intercept": 1.0388748296605254e-281,
+      "g_first_c": 0.7947702247411564,
+      "I(g_first_c ** 2)": 0.3315753036500705,
+      "bmi_first_c": 4.5413175437201184e-05
+    }
+  },
+  "normal_subset": {
+    "n": 910,
+    "women": 256,
+    "reml_converged": true
+  },
+  "extended_model": {
+    "reml_converged": true,
+    "coefficients": {
+      "Intercept": 7.288502104833263,
+      "C(IVF妊娠, Treatment(reference='自然受孕'))[T.IUI（人工授精）]": 1.2700630786535214,
+      "C(IVF妊娠, Treatment(reference='自然受孕'))[T.IVF（试管婴儿）]": -1.7887099936441881,
+      "g_within_s": 1.4001156456033181,
+      "I(g_within_s ** 2)": 0.574595551714691,
+      "g_between_s": -1.5802218833518746,
+      "bmi_within_s": -0.02695932764477597,
+      "bmi_between_s": -0.610689116162916,
+      "age_c": -0.07041523654550612,
+      "gc_c": 42.60681047735508,
+      "log_reads_c": -0.825225957596888,
+      "map_ratio_c": -2.2463836444831227,
+      "dup_ratio_c": -16.81254710088167,
+      "filter_ratio_c": 12.87274331944213
+    },
+    "pvalues": {
+      "Intercept": 0.0,
+      "C(IVF妊娠, Treatment(reference='自然受孕'))[T.IUI（人工授精）]": 0.4776143710776697,
+      "C(IVF妊娠, Treatment(reference='自然受孕'))[T.IVF（试管婴儿）]": 0.3168137179010414,
+      "g_within_s": 7.344927450531404e-44,
+      "I(g_within_s ** 2)": 2.660117580959561e-24,
+      "g_between_s": 4.492261460210321e-08,
+      "bmi_within_s": 0.9254453904175901,
+      "bmi_between_s": 7.576635385588538e-05,
+      "age_c": 0.10259142977764402,
+      "gc_c": 0.00539932781777902,
+      "log_reads_c": 0.0009396602284004616,
+      "map_ratio_c": 0.512018504308597,
+      "dup_ratio_c": 0.3606615402807337,
+      "filter_ratio_c": 0.38275441238477725
+    }
+  }
+}

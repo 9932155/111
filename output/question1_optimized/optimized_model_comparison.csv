@@ -1,0 +1,5 @@
+﻿模型,固定效应,随机效应,logLik,AIC,BIC,收敛
+M4 组内组间+随机斜率,y_pct ~ g_within_s + I(g_within_s ** 2) + g_between_s + bmi_within_s + bmi_between_s,1 + g_within_s,-2246.18207295609,4512.36414591218,4562.062052611196,True
+M2 全局效应+随机斜率,y_pct ~ g_global_s + I(g_global_s ** 2) + bmi_global_s,1 + g_global_s,-2310.600978665662,4637.201957331324,4676.960282690537,True
+M3 组内组间+随机截距,y_pct ~ g_within_s + I(g_within_s ** 2) + g_between_s + bmi_within_s + bmi_between_s,1,-2343.142206445604,4702.284412891208,4742.042738250421,True
+M1 全局效应+随机截距,y_pct ~ g_global_s + I(g_global_s ** 2) + bmi_global_s,1,-2403.1785054749757,4818.3570109499515,4848.175754969361,True
