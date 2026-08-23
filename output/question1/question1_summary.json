@@ -1,0 +1,92 @@
+{
+  "audit": {
+    "raw_rows": 1082,
+    "raw_women": 267,
+    "raw_missing_y": 0,
+    "raw_invalid_gest_week": 0,
+    "episodes": 1064,
+    "episodes_with_technical_replicates": 18,
+    "max_technical_replicates": 2,
+    "valid_episodes": 1064,
+    "valid_women": 267,
+    "women_with_multiple_valid_episodes": 260,
+    "gest_week_mean": 16.819414607948445,
+    "gest_week_sd": 4.070313303830808,
+    "gest_week_min": 11.0,
+    "gest_week_max": 29.0,
+    "bmi_mean": 32.2831478605745,
+    "bmi_sd": 2.978268750498993,
+    "bmi_min": 20.703125,
+    "bmi_max": 46.875,
+    "y_pct_mean": 7.751766736748121,
+    "y_pct_sd": 3.343563918260377,
+    "y_pct_min": 1.0003887,
+    "y_pct_max": 23.4217554,
+    "y_pct_negative": 0
+  },
+  "centers": {
+    "gest_week_mean": 16.819414607948445,
+    "bmi_mean": 32.2831478605745
+  },
+  "model_metrics": {
+    "selected_name": "M2_孕周二次",
+    "selected_formula": "y_pct ~ gest_week_c + I(gest_week_c ** 2) + bmi_c",
+    "lr_stat_vs_null": 328.06690900039393,
+    "lr_df": 3,
+    "lr_p_vs_null": 8.364017566297137e-71,
+    "marginal_r2": 0.13536321380507105,
+    "conditional_r2": 0.7767011241045663,
+    "icc": 0.7417425681387886,
+    "random_intercept_variance": 8.230902762851752,
+    "residual_variance": 2.865808031979772
+  },
+  "diagnostics": {
+    "std_residual_abs_gt_3": 16,
+    "shapiro_w": 0.9605530937981344,
+    "shapiro_p": 2.3380159038144214e-16
+  },
+  "sensitivity": {
+    "trimmed_n": 1042,
+    "trimmed_lower_y_pct": 2.171776215,
+    "trimmed_upper_y_pct": 16.590459410999973,
+    "trimmed_coefficients": {
+      "Intercept": 7.483594199219535,
+      "gest_week_c": 0.2592284303643544,
+      "I(gest_week_c ** 2)": 0.013731746043051869,
+      "bmi_c": -0.155077672184759
+    },
+    "trimmed_pvalues": {
+      "Intercept": 0.0,
+      "gest_week_c": 1.5656151659787226e-47,
+      "I(gest_week_c ** 2)": 0.00010647339856702951,
+      "bmi_c": 0.0016702626454918345
+    },
+    "cluster_ols_coefficients": {
+      "Intercept": 7.562202235771741,
+      "gest_week_c": 0.09746958394363328,
+      "I(gest_week_c ** 2)": 0.011452747780892347,
+      "bmi_c": -0.19649463993897198
+    },
+    "cluster_ols_pvalues": {
+      "Intercept": 1.4874391032109997e-274,
+      "gest_week_c": 0.0012180850575112961,
+      "I(gest_week_c ** 2)": 0.029852849671016035,
+      "bmi_c": 0.003259652214732439
+    }
+  },
+  "selected_fixed_effects": {
+    "Intercept": 7.502342178263279,
+    "gest_week_c": 0.27216635539821743,
+    "I(gest_week_c ** 2)": 0.016912815917643393,
+    "bmi_c": -0.14486158337446964
+  },
+  "selected_fixed_pvalues": {
+    "Intercept": 0.0,
+    "gest_week_c": 1.1688487303823663e-49,
+    "I(gest_week_c ** 2)": 3.7834521940442887e-06,
+    "bmi_c": 0.005040092674392303
+  },
+  "extended_formula": "y_pct ~ gest_week_c + I(gest_week_c ** 2) + bmi_c + age_c + gc_c + log_reads_c + map_ratio_c + dup_ratio_c + filter_ratio_c + C(IVF妊娠, Treatment(reference='自然受孕'))",
+  "extended_n": 1064,
+  "extended_aic": 4814.376339499405
+}
